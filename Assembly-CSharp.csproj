@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,19 +47,16 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.9</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.14f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\AssetsStore\Pixelation\Readme.cs" />
     <Compile Include="Assets\Player\Script\PlayMovement.cs" />
     <Compile Include="Assets\AssetsStore\Pixelation\ReadmeEditor.cs" />
-    <Compile Include="Assets\World\ArtemLoh.cs" />
+    <Compile Include="Assets\World\Scripts\ArtemLoh.cs" />
     <Compile Include="Assets\Player\Casio.cs" />
     <Compile Include="Assets\AssetsStore\Pixelation\Examples\PixelSize\PixelSizeOscillator.cs" />
     <Compile Include="Assets\Player\Script\MouseLook.cs" />
@@ -67,15 +64,15 @@
     <Compile Include="Assets\AssetsStore\Pixelation\Examples\SimpleOscillator.cs" />
     <Compile Include="Assets\Player\Script\CamWiggle.cs" />
     <Compile Include="Assets\AssetsStore\Pixelation\Core\PixelationPost.cs" />
-    <Compile Include="Assets\World\Rejeser.cs" />
-    <Compile Include="Assets\World\Chanc.cs" />
-    <Compile Include="Assets\World\BeakShow.cs" />
-    <Compile Include="Assets\World\Slender.cs" />
+    <Compile Include="Assets\World\Scripts\Rejeser.cs" />
+    <Compile Include="Assets\World\Scripts\Chanc.cs" />
+    <Compile Include="Assets\World\Scripts\BeakShow.cs" />
+    <Compile Include="Assets\World\Scripts\Slender.cs" />
     <Compile Include="Assets\AssetsStore\Pixelation\Examples\PixelTentacle\Rotate.cs" />
     <Compile Include="Assets\AssetsStore\Pixelation\Core\SnapToMainCam.cs" />
     <Compile Include="Assets\Player\FlashlightControl.cs" />
     <Compile Include="Assets\Player\Script\PsycheControl.cs" />
-    <Compile Include="Assets\World\LookAt.cs" />
+    <Compile Include="Assets\World\Scripts\LookAt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetsStore\Pixelation\README.txt" />
@@ -691,9 +688,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="VSSettingsProvider">
       <HintPath>Library\ScriptAssemblies\VSSettingsProvider.dll</HintPath>

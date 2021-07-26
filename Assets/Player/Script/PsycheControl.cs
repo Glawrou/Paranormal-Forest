@@ -29,7 +29,7 @@ public class PsycheControl : MonoBehaviour
 
 
         //Смерть
-        if(psyche >= 1 && AnimPlayer.GetBool("Die") == false)
+        if(psyche >= 0.3f && AnimPlayer.GetBool("Die") == false)
         {
             AnimPlayer.SetBool("Die", true);
             StartCoroutine(Die());
